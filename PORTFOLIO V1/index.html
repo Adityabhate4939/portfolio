@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Charset & Responsive -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title -->
+  <title>Aditya Bhate | Developer, Co-Founder of REBEL & DCE at StyxCorp</title>
+
+  <!-- Meta Description -->
+  <meta name="description" content="Aditya Bhate — Entrepreneur, developer, and co-founder of REBEL and StyxCorp. Building standout brands and digital platforms with vision and purpose." />
+  <meta name="keywords" content="Aditya Bhate, rebel brand, styxcorp, web developer, teen entrepreneur, portfolio, DCE, co-founder, streetwear, creative technologist" />
+  <meta name="author" content="Aditya Bhate" />
+
+  <!-- Open Graph (Facebook, LinkedIn etc.) -->
+  <meta property="og:title" content="Aditya Bhate | Portfolio" />
+  <meta property="og:description" content="Founder of REBEL and DCE at StyxCorp — explore my work and vision." />
+  <meta property="og:image" content="https://yourdomain.com/preview.png" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aditya Bhate | REBEL Co-Founder & Tech Lead" />
+  <meta name="twitter:description" content="Young builder of bold brands. Check out my work at REBEL and StyxCorp." />
+  <meta name="twitter:image" content="https://yourdomain.com/preview.png" />
+
+<!-- JSON-LD Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Aditya Bhate",
+      "url": "https://yourdomain.com",
+      "sameAs": [
+        "https://instagram.com/adii.ifyk",
+        "https://github.com/Adityabhate4939",
+        "https://linkedin.com/in/adityabhate"
+      ],
+      "jobTitle": "Co-Founder at REBEL, DCE at StyxCorp",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "StyxCorp"
+      }
+    },
+    {
+      "@type": "Organization",
+      "name": "Rebel",
+      "url": "https://joinrebel.in",
+      "logo": "https://joinrebel.in/rebel-logo.png",
+      "sameAs": [
+        "https://instagram.com/adii.ifyk",
+        "https://github.com/Adityabhate4939",
+        "https://linkedin.com/in/adityabhate"
+      ]
+    }
+  ]
+}
+</script>
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon_from_generated_AB.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon_from_generated_AB.ico" type="image/x-icon" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+  <!-- Remix Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+  <!-- Analytics (Cloudflare or Plausible) -->
+  <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
+</head>
+
+
+<body>
+    <div class="preloader-terminal">
+        <div class="terminal-text" id="terminalText"></div>
+    </div>
+
+    <div class="cursor-glow"></div>
+    <div class="bg-noise fixed inset-0 pointer-events-none"></div>
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-md border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-white">Aditya<span class="text-primary">.</span></a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="#projects" class="nav-link text-gray-300 hover:text-white transition-colors">Projects</a>
+                    <a href="#services" class="nav-link text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-white transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-300 hover:text-white"
+                    id="mobileMenuButton">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden transition-all duration-300 ease-in-out" id="mobileMenu">
+                <div class="flex flex-col space-y-4 mt-4 pb-4">
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white transition-colors">Projects</a>
+                    <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-black to-gray-900 z-0"></div>
+        <div class="container mx-auto px-6 py-12 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 reveal">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
+                        <span class="block">Hi, I'm</span>
+                        <span class="text-primary block mt-2">Aditya Bhate</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                        Entrepreneur, Developer & Creative Mind
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#projects"
+                            class="btn-hover-effect bg-primary text-white px-8 py-3 rounded-button font-medium inline-block whitespace-nowrap">View
+                            My Work</a>
+                        <a href="#contact"
+                            class="btn-hover-effect border border-gray-700 hover:border-primary text-white px-8 py-3 rounded-button font-medium inline-block whitespace-nowrap">Get
+                            In Touch</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-12 md:mt-0 reveal" style="transition-delay: 0.2s;">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-primary bg-opacity-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-pulse-custom">
+                        </div>
+                        <div
+                            class="w-72 h-72 md:w-96 md:h-96 rounded-full border-2 border-primary border-opacity-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-float">
+                        </div>
+                        <img src="hero img.jpg"
+                            alt="Aditya Bhate portrait"
+                            class="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover object-center mx-auto relative z-10 hover:scale-105 transition-transform duration-300" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-2/5 reveal">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 bg-primary bg-opacity-10 rounded-lg transform rotate-3 animate-float">
+                        </div>
+                        <img src="about.png"
+                            alt="Aditya Bhate working on a project"
+                            class="rounded-lg relative z-10 object-cover w-full h-[500px] object-[center_40%] animate-float"
+                            style="animation-delay: 0.2s;" loading="lazy" />
+                    </div>
+                </div>
+                <div class="md:w-3/5 reveal" style="transition-delay: 0.2s;">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+                    <div class="w-20 h-1 bg-primary mb-8"></div>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        I'm <b>Aditya Bhate</b>, a 17-year-old entrepreneur, coder, and creative mind from Nashik. I’ve
+                        been
+                        building, breaking, and creating since I was a kid, driven by a passion for turning raw ideas
+                        into real digital impact.
+                    </p>
+                    <p class="text-gray-300 mb-6 text-lg">I’m also the Co-Founder of <b>REBEL</b>, a streetwear brand
+                        built from scratch, rooted in real stories,
+                        raw emotion, and unapologetic self-expression. It’s not just fashion. It’s a mindset.
+
+                    </p>
+                    <p class="text-gray-300 mb-8 text-lg">
+                        I currently lead as DCE (Team Head) at <b>StyxCorp</b>, where I drive bold tech visions with a
+                        team
+                        that moves fast and thinks bigger.
+                    </p>
+                    <br>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                                <i class="ri-code-s-slash-line ri-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                                <p class="text-gray-400">
+                                    Creating responsive, modern websites with clean code.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                                <i class="ri-layout-masonry-line ri-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+                                <p class="text-gray-400">
+                                    Designing intuitive and engaging user experiences.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                                <i class="ri-lightbulb-line ri-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Entrepreneurship</h3>
+                                <p class="text-gray-400">
+                                    Building and scaling innovative business solutions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mr-4">
+                                <i class="ri-team-line ri-lg text-primary"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Team Leadership</h3>
+                                <p class="text-gray-400">
+                                    Managing teams and driving project success.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact"
+                        class="btn-hover-effect bg-primary text-white px-8 py-3 rounded-button font-medium inline-block whitespace-nowrap">Let's
+                        Connect</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <!-- Updated Section Title -->
+    <section id="projects" class="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Startup Ventures</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+                <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+                    Presenting the brands and digital platforms I’ve co-created and led, built from scratch, backed by
+                    purpose.
+                </p>
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols- gap-8">
+                <!-- Project 1: REBEL -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center reveal" style="transition-delay: 0.1s;">
+
+                    <!-- Image LEFT -->
+                    <div
+                        class="project-card bg-secondary rounded-lg overflow-hidden relative group h-full min-h-[15rem] md:min-h-[18rem]">
+                        <img src="1000020473.webp" alt="REBEL streetwear brand preview" class="w-full h-full object-cover" loading="lazy" />
+                        <a href="https://joinrebel.in" target="_blank"
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white font-bold text-lg">View Details</span>
+                        </a>
+                    </div>
+
+                    <!-- Info RIGHT -->
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">REBEL</h3>
+                            <span
+                                class="text-xs text-primary bg-primary bg-opacity-10 px-3 py-1 rounded-full">Co-Founder</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Streetwear meets statement. A bold youth-centric brand blending fashion with rebellion and
+                            authenticity.
+                        </p>
+                        <a href="https://joinrebel.in" target="_blank"
+                            class="text-primary hover:text-white transition-colors flex items-center">
+                            <span>Explore Project</span>
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Project 2: STYXCORP with image on the right and full height -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center reveal" style="transition-delay: 0.1s;">
+
+                    <!-- Content Left -->
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">StyxCorp</h3>
+                            <span class="text-xs text-primary bg-primary bg-opacity-10 px-3 py-1 rounded-full">Team
+                                Lead</span>
+                        </div>
+                        <p class="text-gray-400 mb-4">
+                            Driving digital innovation through business solutions, team management platforms, and
+                            enterprise
+                            systems.
+                        </p>
+                        <a href="https://styxcorp.in" target="_blank"
+                            class="text-primary hover:text-white transition-colors flex items-center">
+                            <span>Explore Project</span>
+                            <i class="ri-arrow-right-line ml-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Image Right -->
+                    <div
+                        class="project-card bg-secondary rounded-lg overflow-hidden relative group h-full min-h-[15rem] md:min-h-[18rem]">
+                        <img src="styxcorp.png" alt="StyxCorp platform showcase"  class="w-full h-full object-cover" loading="lazy">
+                        <a href="https://styxcorp.in" target="_blank"
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-white font-bold text-lg">View Details</span>
+                        </a>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="text-center mt-12 reveal">
+                <a href="projects.html" target="_blank"
+                    class="btn-hover-effect border border-gray-700 hover:border-primary text-white px-8 py-3 rounded-button font-medium inline-block whitespace-nowrap">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <!-- Services Section -->
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+        <section id="services" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Services I Offer</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+                    <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+                        Specialized expertise to help businesses and individuals achieve
+                        their digital goals with innovative solutions.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8">
+                    <!-- Service 1 -->
+                    <div class="service-card bg-black border border-gray-800 rounded-lg p-8 reveal"
+                        style="transition-delay: 0.1s;">
+                        <div
+                            class="w-16 h-16 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6 service-icon">
+                            <i class="ri-code-s-slash-line ri-xl text-primary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                        <p class="text-gray-400 mb-6">
+                            Custom, responsive websites built with modern technologies that
+                            deliver exceptional user experiences and performance.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-300">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    <span>Responsive Design</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    <span>Frontend & Backend</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    <span>SEO</span>
+                                </li>
+                            </ul>
+
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-300">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    <span>Responsive Design</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    <span>Frontend & Backend</span>
+                                </li>
+                                <li class="flex items-center text-gray-300">
+                                    <i class="ri-check-line text-primary mr-2"></i>
+                                    <span>E-commerce Solutions</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Contact Section -->
+                    <section id="contact" class="py-20 bg-gradient-to-b from-gray-900 to-black">
+                        <div class="container mx-auto px-6">
+                            <div class="text-center mb-16 reveal">
+                                <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's Connect</h2>
+                                <div class="w-20 h-1 bg-primary mx-auto mb-8"></div>
+                                <p class="text-gray-300 max-w-2xl mx-auto text-lg">
+                                    Choose your preferred way to reach out
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                                <!-- Instagram Card -->
+                                <div class="contact-card bg-secondary rounded-lg p-8 text-center reveal"
+                                    style="transition-delay: 0.1s;">
+                                    <div
+                                        class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
+                                        <i class="ri-instagram-line ri-xl text-primary"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2">Instagram</h3>
+                                    <p class="text-gray-400 mb-6">@adii.ifyk</p>
+                                    <a href="https://instagram.com/adii.ifyk" target="_blank"
+                                        class="btn-hover-effect bg-primary text-white px-6 py-3 rounded-button font-medium inline-block whitespace-nowrap">Follow
+                                        & DM</a>
+                                </div>
+                                <!-- Email Card -->
+                                <div class="contact-card bg-secondary rounded-lg p-8 text-center reveal"
+                                    style="transition-delay: 0.2s;">
+                                    <div
+                                        class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
+                                        <i class="ri-mail-line ri-xl text-primary"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                                    <p class="text-gray-400 mb-6">dce.adityabhate@styxcorp.in</p>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dce.adityabhate@styxcorp.in"
+                                        target="_blank"
+                                        class="btn-hover-effect bg-primary text-white px-6 py-3 rounded-button font-medium inline-block whitespace-nowrap">
+                                        Send Email
+                                    </a>
+
+                                </div>
+                                <!-- Meeting Card -->
+                                <div class="contact-card bg-secondary rounded-lg p-8 text-center reveal"
+                                    style="transition-delay: 0.3s;">
+                                    <div
+                                        class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6 animate-float">
+                                        <i class="ri-calendar-line ri-xl text-primary"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-2">Schedule a Meeting</h3>
+                                    <p class="text-gray-400 mb-6">Find a time that works for you</p>
+                                    <a href="https://calendly.com/adityabhate" target="_blank"
+                                        class="btn-hover-effect bg-primary text-white px-6 py-3 rounded-button font-medium inline-block whitespace-nowrap">
+                                        Book Now
+                                    </a>
+
+                                </div>
+                            </div>
+                            <!-- Contact Form -->
+                            <div class="max-w-2xl mx-auto bg-secondary rounded-lg p-8 reveal">
+                                <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+                                <form>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                        <div class="relative">
+                                            <input type="text"
+                                                class="custom-input w-full bg-transparent border-none border-b border-gray-700 px-0 py-2 focus:ring-0"
+                                                id="name" placeholder=" " />
+                                            <label for="name" class="custom-input-label">Your Name</label>
+                                        </div>
+                                        <div class="relative">
+                                            <input type="email"
+                                                class="custom-input w-full bg-transparent border-none border-b border-gray-700 px-0 py-2 focus:ring-0"
+                                                id="email" placeholder=" " />
+                                            <label for="email" class="custom-input-label">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="relative mb-6">
+                                        <textarea
+                                            class="custom-input w-full bg-transparent border-none border-b border-gray-700 px-0 py-2 focus:ring-0 min-h-[100px]"
+                                            id="message" placeholder=" "></textarea>
+                                        <label for="message" class="custom-input-label">Your Message</label>
+                                    </div>
+                                    <button type="submit"
+                                        class="btn-hover-effect bg-primary text-white px-8 py-3 rounded-button font-medium inline-block whitespace-nowrap w-full">
+                                        Send Message
+                                    </button>
+                                </form>
+                                <div class="mt-8 text-center">
+                                    <p class="text-gray-400">Response time: Within 24 hours</p>
+                                    <p class="text-gray-400">
+                                        Available for projects and collaborations
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Footer -->
+                    <footer class="bg-black py-12 border-t border-gray-800">
+                        <div class="container mx-auto px-6">
+                            <div class="flex flex-col md:flex-row justify-between items-center">
+                                <div class="mb-8 md:mb-0">
+                                    <a href="#" class="text-2xl font-bold text-white">Aditya<span
+                                            class="text-primary">.</span></a>
+                                    <p class="text-gray-400 mt-2">
+                                        Entrepreneur, Developer & Creative Mind
+                                    </p>
+                                </div>
+                                <div class="flex space-x-4">
+                                    <a href="#"
+                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-colors">
+                                        <i class="ri-instagram-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-colors">
+                                        <i class="ri-twitter-x-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-colors">
+                                        <i class="ri-linkedin-line"></i>
+                                    </a>
+                                    <a href="#"
+                                        class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-primary hover:text-white transition-colors">
+                                        <i class="ri-github-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                                    © 2025 Aditya Bhate. All rights reserved.
+                                </p>
+                                <div class="flex space-x-8">
+                                    <a href="#"
+                                        class="text-gray-500 text-sm hover:text-primary transition-colors">Privacy
+                                        Policy</a>
+                                    <a href="#" class="text-gray-500 text-sm hover:text-primary transition-colors">Terms
+                                        of Service</a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <script id="cursorEffect">
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const cursorGlow = document.querySelector(".cursor-glow");
+                            document.addEventListener("mousemove", function (e) {
+                                cursorGlow.style.left = e.clientX + "px";
+                                cursorGlow.style.top = e.clientY + "px";
+                            });
+                            const interactiveElements = document.querySelectorAll(
+                                "a, button, .project-card, .service-card, .contact-card",
+                            );
+                            interactiveElements.forEach((element) => {
+                                element.addEventListener("mouseenter", function () {
+                                    cursorGlow.style.width = "50px";
+                                    cursorGlow.style.height = "50px";
+                                });
+                                element.addEventListener("mouseleave", function () {
+                                    cursorGlow.style.width = "20px";
+                                    cursorGlow.style.height = "20px";
+                                });
+                            });
+                        });
+                    </script>
+                    <script id="mobileMenu">
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const mobileMenuButton = document.getElementById("mobileMenuButton");
+                            const mobileMenu = document.getElementById("mobileMenu");
+                            mobileMenuButton.addEventListener("click", function () {
+                                mobileMenu.classList.toggle("hidden");
+                                if (
+                                    mobileMenuButton.querySelector("i").classList.contains("ri-menu-line")
+                                ) {
+                                    mobileMenuButton.querySelector("i").classList.remove("ri-menu-line");
+                                    mobileMenuButton.querySelector("i").classList.add("ri-close-line");
+                                } else {
+                                    mobileMenuButton.querySelector("i").classList.remove("ri-close-line");
+                                    mobileMenuButton.querySelector("i").classList.add("ri-menu-line");
+                                }
+                            });
+                            // Close mobile menu when clicking on a link
+                            const mobileLinks = mobileMenu.querySelectorAll("a");
+                            mobileLinks.forEach((link) => {
+                                link.addEventListener("click", function () {
+                                    mobileMenu.classList.add("hidden");
+                                    mobileMenuButton.querySelector("i").classList.remove("ri-close-line");
+                                    mobileMenuButton.querySelector("i").classList.add("ri-menu-line");
+                                });
+                            });
+                        });
+                    </script>
+                    <script id="scrollReveal">
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const revealElements = document.querySelectorAll(".reveal");
+                            function checkReveal() {
+                                const windowHeight = window.innerHeight;
+                                const revealPoint = 150;
+                                revealElements.forEach((element) => {
+                                    const revealTop = element.getBoundingClientRect().top;
+                                    if (revealTop < windowHeight - revealPoint) {
+                                        element.classList.add("active");
+                                    }
+                                });
+                            }
+                            window.addEventListener("scroll", checkReveal);
+                            window.addEventListener("resize", checkReveal);
+                            // Initial check
+                            checkReveal();
+                        });
+                    </script>
+                    <script id="smoothScroll">
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const links = document.querySelectorAll('a[href^="#"]');
+                            links.forEach((link) => {
+                                link.addEventListener("click", function (e) {
+                                    e.preventDefault();
+                                    const targetId = this.getAttribute("href");
+                                    if (targetId === "#") return;
+                                    const targetElement = document.querySelector(targetId);
+                                    if (targetElement) {
+                                        window.scrollTo({
+                                            top: targetElement.offsetTop - 80,
+                                            behavior: "smooth",
+                                        });
+                                    }
+                                });
+                            });
+                        });
+
+                        window.addEventListener("load", () => {
+                            const preloader = document.getElementById("preloader");
+                            setTimeout(() => {
+                                preloader.classList.add("hidden");
+                            }, 1000); // Delay to ensure it shows for at least a second
+                        });
+                    </script>
+</body>
+
+</html>

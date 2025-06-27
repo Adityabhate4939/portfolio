@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Aditya Bhate</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .btn-hover-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; 
+    width: 100%;
+    height: 100%;
+    background: rgba(143, 68, 68, 0.218);
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+  }
+  .btn-hover-effect:hover::after {
+    transform: translateX(100%);
+  }
+    .btn-hover-effect:hover {
+    border-color: #dc2626; /* red-600 */
+    background-color: #1f2937; /* gray-800 */
+  }
+  .btn-hover-effect:hover::after {
+    transform: translateX(100%);
+  }
+  .btn-hover-effect span {
+    position: relative;
+    z-index: 10;
+  }
+</style>
+</head>
+<body class="bg-black text-white font-sans">
+  <section class="py-20 px-6 max-w-5xl mx-auto">
+    <h1 class="text-4xl font-bold text-center mb-12">My Startup Ventures</h1>
+
+    <!-- REBEL Section -->
+    <div class="mb-20">
+      <h2 class="text-3xl font-semibold mb-4">REBEL</h2>
+      <p class="text-gray-300 mb-6">
+        REBEL is more than just a streetwear label — it's a youth movement rooted in self-expression, authenticity, and cultural defiance.
+        The brand creates bold and minimal pieces that empower individuality and challenge norms, blending fashion with creative activism.
+      </p>
+      <ul class="list-disc list-inside text-gray-400 mb-4">
+        <li>Founded and conceptualized by Aditya Bhate at 17</li>
+        <li>Focused on youth-driven apparel, storytelling, and content</li>
+        <li>Direct-to-consumer eCommerce powered by original design</li>
+      </ul>
+      <a href="https://joinrebel.in" target="_blank" class="btn-hover-effect border border-gray-700 hover:border-primary text-white px-6 py-3 rounded font-medium inline-block whitespace-nowrap relative overflow-hidden transition-colors">Visit REBEL Website</a>
+    </div>
+
+    <!-- StyxCorp Section -->
+    <div>
+      <h2 class="text-3xl font-semibold mb-4">StyxCorp</h2>
+      <p class="text-gray-300 mb-6">
+        StyxCorp is a digital product and innovation agency co-led by Aditya Bhate, building intelligent business solutions and helping brands evolve digitally.
+        It acts as a creative collective with a focus on tech-driven platforms, user experience, and scalable systems.
+      </p>
+      <ul class="list-disc list-inside text-gray-400 mb-4">
+        <li>Project lead (DCE Head) managing tech, design, and strategy</li>
+        <li>Client-focused development with rapid delivery pipelines</li>
+        <li>Built-in tools for collaboration, analytics, and management</li>
+      </ul>
+      <a href="https://styxcorp.in" target="_blank" class="btn-hover-effect border border-gray-700 hover:border-primary text-white px-6 py-3 rounded font-medium inline-block whitespace-nowrap relative overflow-hidden transition-colors">Visit StyxCorp Website</a>
+    </div>
+  </section>
+</body>
+</html>
